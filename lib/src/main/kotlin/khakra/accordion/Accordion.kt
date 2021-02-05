@@ -1,15 +1,20 @@
 @file:JsModule("@chakra-ui/accordion/dist/esm/accordion")
+
 package khakra.accordion
 
 import khakra.*
+import khakra.system.*
+import khakra.system.ThemingProps
 import kotlinx.html.*
 import react.*
 
-public external interface AccordionProps : UseAccordionProps, AccordionChakraHtml, ThemingProps {
+public external interface AccordionProps : UseAccordionProps, AccordionChakraHtml, ThemingProps, HTMLChakraProps {
   /**
    * If `true`, height animation and transitions will be disabled.
    */
   public var reduceMotion: Boolean?
+    get() = definedExternally
+    set(value) = definedExternally
 }
 
 /**
@@ -19,10 +24,12 @@ public external interface AccordionProps : UseAccordionProps, AccordionChakraHtm
  * It wraps all accordion items in a `div` for better grouping.
  * @see Docs https://chakra-ui.com/docs/components/accordion
  */
-public external val Accordion: RClass<AccordionProps>
+public external val Accordion: ComponentWithAs<AccordionProps>
 
-public external interface AccordionItemProps : UseAccordionItemProps {
+public external interface AccordionItemProps : UseAccordionItemProps, HTMLChakraProps {
   public var children: dynamic
+    get() = definedExternally
+    set(value) = definedExternally
 }
 
 /**
@@ -31,7 +38,7 @@ public external interface AccordionItemProps : UseAccordionItemProps {
  *
  * It also provides context for the accordion button and panel.
  */
-public external val AccordionItem: RClass<AccordionItemProps>
+public external val AccordionItem: ComponentWithAs<AccordionItemProps>
 
 
 /**
@@ -39,7 +46,7 @@ public external val AccordionItem: RClass<AccordionItemProps>
  */
 public external fun useAccordionItemState(): UseAccordionItemReturnBase
 
-public external interface AccordionButtonProps : RProps
+public external interface AccordionButtonProps : HTMLChakraProps
 
 /**
  * AccordionButton is used expands and collapses an accordion item.
@@ -48,9 +55,9 @@ public external interface AccordionButtonProps : RProps
  * Note 🚨: Each accordion button must be wrapped in an heading tag,
  * that is appropriate for the information architecture of the page.
  */
-public external val AccordionButton: RClass<AccordionButtonProps>
+public external val AccordionButton: ComponentWithAs<AccordionButtonProps>
 
-public external interface AccordionPanelProps : RProps
+public external interface AccordionPanelProps : HTMLChakraProps
 
 /**
  * Accordion panel that holds the content for each accordion.
@@ -58,10 +65,10 @@ public external interface AccordionPanelProps : RProps
  *
  * It uses the `Collapse` component to animate its height.
  */
-public external val AccordionPanel: RClass<AccordionPanelProps>
+public external val AccordionPanel: ComponentWithAs<AccordionPanelProps>
 
 /**
  * AccordionIcon that gives a visual cue of the open/close state of the accordion item.
  * It rotates `180deg` based on the open/close state.
  */
-public external val AccordionIcon: RClass<IconProps>
+public external val AccordionIcon: ComponentWithAs<IconProps>

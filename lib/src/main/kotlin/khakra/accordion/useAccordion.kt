@@ -9,44 +9,36 @@ public external interface UseAccordionProps : RProps {
    * If `true`, multiple accordion items can be expanded at once.
    */
   public var allowMultiple: Boolean?
+    get() = definedExternally
+    set(value) = definedExternally
   
   /**
    * If `true`, any expanded accordion item can be collapsed again.
    */
   public var allowToggle: Boolean?
+    get() = definedExternally
+    set(value) = definedExternally
   
   /**
    * The index(es) of the expanded accordion item
    */
-  public var index: ExpandedIndex?
+  public var index: dynamic // number | number[]
+    get() = definedExternally
+    set(value) = definedExternally
   
   /**
    * The initial index(es) of the expanded accordion item
    */
-  public var defaultIndex: ExpandedIndex?
+  public var defaultIndex: dynamic // number | number[]
+    get() = definedExternally
+    set(value) = definedExternally
   
   /**
    * The callback invoked when accordion items are expanded or collapsed.
    */
-  public var onChange: ((expandedIndex: ExpandedIndex) -> Unit)?
-}
-
-public external interface GetAccordionItemProps : RProps {
-  public var isOpen: Boolean
-  public var onChange: (isOpen: Boolean) -> Unit
-}
-
-public external interface UseAccordionReturn : UseAccordionReturnBase {
-  public var htmlProps: dynamic
-}
-
-public external interface UseAccordionReturnBase {
-  public var index: dynamic
-  public var setIndex: (dynamic) -> Unit
-  public var getAccordionItemProps: (idx: Int?) -> GetAccordionItemProps
-  public var focusedIndex: dynamic
-  public var setFocusedIndex: (dynamic) -> Unit
-  public var domContext: dynamic
+  public var onChange: ((expandedIndex: dynamic /* number | number[] */) -> Unit)?
+    get() = definedExternally
+    set(value) = definedExternally
 }
 
 /**
@@ -55,28 +47,52 @@ public external interface UseAccordionReturnBase {
  */
 public external fun useAccordion(props: UseAccordionProps): UseAccordionReturn
 
+public external interface UseAccordionReturn : UseAccordionReturnBase {
+  public var htmlProps: Any
+}
+
+public external interface UseAccordionReturnBase {
+  public var index: dynamic // number | number[]
+  public var setIndex: RDispatch<dynamic /* number | number[] */>
+  public var getAccordionItemProps: (idx: Int?) -> GetAccordionItemProps
+  public var focusedIndex: Int
+  public var setFocusedIndex: RDispatch<Int>
+  public var domContext: Any
+}
+
+public external interface GetAccordionItemProps : RProps {
+  public var isOpen: Boolean
+  public var onChange: (isOpen: Boolean) -> Unit
+}
+
 public external interface AccordionContext : UseAccordionReturnBase {
   public var reduceMotion: Boolean
 }
 
-public external val AccordionProvider: dynamic
-public external val useAccordionContext: dynamic
+public external val AccordionProvider: RProvider<AccordionContext>
+public external val useAccordionContext: () -> AccordionContext
 
 public external interface UseAccordionItemProps : RProps {
   /**
    * If `true`, the accordion item will be disabled.
    */
   public var isDisabled: Boolean?
+    get() = definedExternally
+    set(value) = definedExternally
   
   /**
    * If `true`, the accordion item will be focusable.
    */
   public var isFocusable: Boolean?
+    get() = definedExternally
+    set(value) = definedExternally
   
   /**
    * A unique id for the accordion item.
    */
   public var id: String?
+    get() = definedExternally
+    set(value) = definedExternally
 }
 
 /**
@@ -87,8 +103,8 @@ public external interface UseAccordionItemProps : RProps {
  */
 public external fun useAccordionItem(props: UseAccordionItemProps): UseAccordionItemReturn
 
-public external interface UseAccordionItemReturn: UseAccordionItemReturnBase {
-  public val htmlProps: dynamic
+public external interface UseAccordionItemReturn : UseAccordionItemReturnBase {
+  public val htmlProps: Any
 }
 
 public external interface UseAccordionItemReturnBase {
@@ -97,6 +113,6 @@ public external interface UseAccordionItemReturnBase {
   public val isFocusable: Boolean?
   public val onOpen: () -> Unit
   public val onClose: () -> Unit
-  public val getButtonProps: dynamic
-  public val getPanelProps: dynamic
+  public val getButtonProps: (props: dynamic, ref: RRef?) -> dynamic
+  public val getPanelProps: (props: dynamic, ref: RRef?) -> dynamic
 }

@@ -6,6 +6,7 @@ plugins {
 kotlin {
   explicitApi()
   js {
+    useCommonJs()
     binaries.library()
     browser()
   }
