@@ -4,6 +4,8 @@ plugins {
   signing
 }
 
+description = "Kotlin React bindings for ChakraUI"
+
 kotlin {
   explicitApi()
   js {
@@ -46,7 +48,7 @@ publishing {
       pom {
         name by rootProject.name
         url by "https://github.com/mpetuska/${rootProject.name}"
-        description by rootProject.description
+        description by project.description
         licenses {
           license {
             name by "The Apache License, Version 2.0"
