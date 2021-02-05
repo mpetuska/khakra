@@ -1,6 +1,6 @@
 package sandbox.renders.layout
 
-import khakra.layout.*
+import io.github.mpetuska.khakra.layout.*
 import kotlinx.html.*
 import react.dom.*
 import sandbox.util.*

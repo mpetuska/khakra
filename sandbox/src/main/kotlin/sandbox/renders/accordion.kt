@@ -1,6 +1,6 @@
 package sandbox.renders
 
-import khakra.accordion.*
+import io.github.mpetuska.khakra.accordion.*
 import sandbox.util.*
 
 val AccordionPreview by Preview {

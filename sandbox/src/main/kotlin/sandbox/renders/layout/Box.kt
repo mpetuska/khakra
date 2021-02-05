@@ -1,8 +1,8 @@
 package sandbox.renders.layout
 
-import khakra.icons.*
-import khakra.image.*
-import khakra.layout.*
+import io.github.mpetuska.khakra.icons.*
+import io.github.mpetuska.khakra.image.*
+import io.github.mpetuska.khakra.layout.*
 import sandbox.util.*
 
 val BoxPreview by Preview {

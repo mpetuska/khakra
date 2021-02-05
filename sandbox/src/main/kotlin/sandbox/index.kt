@@ -1,6 +1,6 @@
 package sandbox
 
-import khakra.react.*
+import io.github.mpetuska.khakra.react.*
 import kotlinx.browser.*
 import react.dom.*
 import sandbox.renders.*
