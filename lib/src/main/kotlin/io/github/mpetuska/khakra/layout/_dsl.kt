@@ -1,7 +1,11 @@
 package io.github.mpetuska.khakra.layout
 
-import io.github.mpetuska.khakra.*
-import react.*
+import io.github.mpetuska.khakra.kt.Builder
+import io.github.mpetuska.khakra.kt.KhakraComponent
+import io.github.mpetuska.khakra.KhakraDSL
+import react.RBuilder
+import react.RElementBuilder
+import react.ReactElement
 
 @KhakraDSL
 public inline fun RBuilder.AspectRatio(
@@ -44,3 +48,15 @@ public inline fun RBuilder.AbsoluteCenter(
   noinline props: Builder<AbsoluteCenterProps> = {},
   crossinline block: Builder<RElementBuilder<AbsoluteCenterProps>> = {},
 ): ReactElement = KhakraComponent(AbsoluteCenter, props, block)
+
+@KhakraDSL
+public inline fun RBuilder.Container(
+  noinline props: Builder<ContainerProps> = {},
+  crossinline block: Builder<RElementBuilder<ContainerProps>> = {},
+): ReactElement = KhakraComponent(Container, props, block)
+
+@KhakraDSL
+public inline fun RBuilder.Flex(
+  noinline props: Builder<FlexProps> = {},
+  crossinline block: Builder<RElementBuilder<FlexProps>> = {},
+): ReactElement = KhakraComponent(Flex, props, block)

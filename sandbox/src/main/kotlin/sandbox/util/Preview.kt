@@ -1,6 +1,6 @@
 package sandbox.util
 
-import io.github.mpetuska.khakra.*
+import io.github.mpetuska.khakra.kt.Builder
 import io.github.mpetuska.khakra.layout.*
 import react.*
 import react.dom.*
