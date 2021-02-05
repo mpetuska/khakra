@@ -1,17 +1,19 @@
 @file:JsModule("@chakra-ui/react/dist/esm/chakra-provider")
+
 package khakra.react
 
 import khakra.*
 import kotlinext.js.*
 import react.*
 
-public external interface ChakraProviderProps: RProps {
+public external interface ChakraProviderProps : RProps {
   /**
    * a theme. if omitted, uses the default theme provided by chakra
    */
   public var theme: Record<String, Any>?
     get() = definedExternally
     set(value) = definedExternally
+  
   /**
    * Common z-index to use for `Portal`
    *
@@ -20,6 +22,7 @@ public external interface ChakraProviderProps: RProps {
   public var portalZIndex: Int?
     get() = definedExternally
     set(value) = definedExternally
+  
   /**
    * If `true`, `CSSReset` component will be mounted to help
    * you reset browser styles
@@ -29,6 +32,7 @@ public external interface ChakraProviderProps: RProps {
   public var resetCSS: Boolean?
     get() = definedExternally
     set(value) = definedExternally
+  
   /**
    * manager to persist a users color mode preference in
    *
@@ -37,7 +41,7 @@ public external interface ChakraProviderProps: RProps {
    *
    * @default localStorageManager
    */
-  public var  colorModeManager: StorageManager?
+  public var colorModeManager: StorageManager?
     get() = definedExternally
     set(value) = definedExternally
   public var children: dynamic

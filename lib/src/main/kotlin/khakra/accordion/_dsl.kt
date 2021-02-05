@@ -1,6 +1,7 @@
 package khakra.accordion
 
 import khakra.*
+import khakra.icon.*
 import react.*
 
 @KhakraDSL

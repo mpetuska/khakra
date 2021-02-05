@@ -22,6 +22,6 @@ public external interface StyleProps :
   ListProps,
   PositionProps,
   OutlineProps,
-  OtherProps {}
+  OtherProps
 
 public external interface SystemProps : StyleProps, RProps

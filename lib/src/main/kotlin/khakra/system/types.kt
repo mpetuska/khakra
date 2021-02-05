@@ -1,4 +1,5 @@
 @file:JsModule("@chakra-ui/system/dist/esm/system.types")
+
 package khakra.system
 
 import khakra.styledSystem.*
@@ -28,14 +29,14 @@ public external interface ChakraProps : SystemProps {
   /**
    * apply layer styles defined in `theme.layerStyles`
    */
-  public var layerStyle: String?
+  public override var layerStyle: String?
     get() = definedExternally
     set(value) = definedExternally
   
   /**
    * apply typography styles defined in `theme.textStyles`
    */
-  public var textStyle: String?
+  public override var textStyle: String?
     get() = definedExternally
     set(value) = definedExternally
   
@@ -49,14 +50,14 @@ public external interface ChakraProps : SystemProps {
    *
    * This will apply styles defined in `theme.styles.h3`
    */
-  public var apply: String?
+  public override var apply: String?
     get() = definedExternally
     set(value) = definedExternally
   
   /**
    * if `true`, it'll render an ellipsis when the text exceeds the width of the viewport or maxWidth set.
    */
-  public var isTruncated: String?
+  public var isTruncated: Boolean?
     get() = definedExternally
     set(value) = definedExternally
   
@@ -91,9 +92,7 @@ public external interface ChakraProps : SystemProps {
     set(value) = definedExternally
 }
 
-public external interface As : ReactElement
-
-public external interface ComponentWithAs<P: RProps>: RClass<P> {
+public external interface ComponentWithAs<P : RProps> : RClass<P> {
   public operator fun invoke(props: dynamic): ReactElement
   public var propTypes: dynamic
     get() = definedExternally
@@ -106,4 +105,4 @@ public external interface ComponentWithAs<P: RProps>: RClass<P> {
     set(value) = definedExternally
 }
 
-public external interface ChakraComponent<P: RProps> : ComponentWithAs<P>
+public external interface ChakraComponent<P : RProps> : ComponentWithAs<P>

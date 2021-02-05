@@ -3,12 +3,12 @@
 package khakra.accordion
 
 import khakra.*
+import khakra.icon.*
 import khakra.system.*
-import khakra.system.ThemingProps
 import kotlinx.html.*
 import react.*
 
-public external interface AccordionProps : UseAccordionProps, AccordionChakraHtml, ThemingProps, HTMLChakraProps {
+public external interface AccordionProps : UseAccordionProps, ThemingProps, HTMLChakraProps {
   /**
    * If `true`, height animation and transitions will be disabled.
    */

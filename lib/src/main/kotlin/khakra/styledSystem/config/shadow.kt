@@ -13,15 +13,17 @@ public external interface ShadowProps : RProps {
   /**
    * The `box-shadow` property
    */
-  public var  boxShadow: dynamic
+  public var boxShadow: dynamic
     get() = definedExternally
     set(value) = definedExternally
+  
   /**
    * The `box-shadow` property
    */
-  public var  shadow: dynamic
+  public var shadow: dynamic
     get() = definedExternally
     set(value) = definedExternally
+  
   /**
    * The `text-shadow` property
    */

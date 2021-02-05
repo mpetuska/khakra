@@ -13,12 +13,14 @@ kotlin {
 }
 
 val chakraVersion = "1.2.1"
+val chakraIconsVersion = "1.0.4"
 dependencies {
   api(platform("org.jetbrains.kotlin:kotlin-bom"))
   api("org.jetbrains:kotlin-react:_")
   api("org.jetbrains:kotlin-react-dom:_")
   api("org.jetbrains:kotlin-styled:_")
   api(npm("@chakra-ui/react", chakraVersion))
+  api(npm("@chakra-ui/icons", chakraIconsVersion))
   api(npm("@emotion/react", "11.1.4"))
   api(npm("@emotion/styled", "11.0.0"))
   api(npm("framer-motion", "3.3.0"))

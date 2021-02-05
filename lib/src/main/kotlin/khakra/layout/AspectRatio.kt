@@ -1,4 +1,4 @@
-@file:JsModule("@chakra-ui/layout/dist/aspect-ratio")
+@file:JsModule("@chakra-ui/layout/dist/esm/aspect-ratio")
 
 package khakra.layout
 

@@ -3,10 +3,9 @@
 package khakra.styledSystem.config
 
 import khakra.styledSystem.core.*
-import kotlinext.js.*
 import react.*
 
-public external interface ColorProps: RProps {
+public external interface ColorProps : RProps {
   /**
    * The CSS `color` property
    */
