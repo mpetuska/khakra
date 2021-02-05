@@ -1,3 +1,7 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/gitpod-ready_to_code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/mpetuska/khakra)
+[![Slack chat](https://img.shields.io/badge/kotlinlang-khakra-green?logo=slack&style=flat-square)](https://kotlinlang.slack.com/messages/khakra)
+[![Version maven-central](https://img.shields.io/maven-central/v/io.github.mpetuska/khakra?logo=apache-maven&style=flat-square)](https://mvnrepository.com/artifact/io.github.mpetuska/khakra)
+
 # KHAKRA (WIP)
 
 Kotlin React bindings for [ChakraUI](https://chakra-ui.com/docs/getting-started)
