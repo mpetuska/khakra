@@ -71,7 +71,7 @@ fun RBuilder.Example() {
 - [X] close-button
 - [ ] color-mode
 - [ ] control-box
-- [ ] counter
+- [X] counter
 - [ ] css-reset
 - [ ] descendant
 - [ ] editable
