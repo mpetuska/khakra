@@ -21,7 +21,7 @@ public external interface AlertOptions {
 public external interface AlertProps
   : HTMLChakraProps,
   AlertOptions,
-  ThemingProps {}
+  ThemingProps
 
 /**
  * Alert is used to communicate the state or status of a

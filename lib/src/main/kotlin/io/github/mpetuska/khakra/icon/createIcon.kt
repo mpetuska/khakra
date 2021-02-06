@@ -2,7 +2,7 @@
 
 package io.github.mpetuska.khakra.icon
 
-import io.github.mpetuska.khakra.system.*
+import io.github.mpetuska.khakra.system.ComponentWithAs
 
 public external interface CreateIconOptions {
   /**

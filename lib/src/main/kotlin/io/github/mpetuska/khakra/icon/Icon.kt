@@ -2,8 +2,9 @@
 
 package io.github.mpetuska.khakra.icon
 
-import io.github.mpetuska.khakra.*
-import io.github.mpetuska.khakra.system.*
+import io.github.mpetuska.khakra.SVGAttributes
+import io.github.mpetuska.khakra.system.ChakraProps
+import io.github.mpetuska.khakra.system.ComponentWithAs
 
 public external interface IconProps : ChakraProps, SVGAttributes
 
