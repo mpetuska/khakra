@@ -11,7 +11,8 @@ kotlin {
       commonWebpackConfig {
         cssSupport.enabled = true
         devServer = devServer?.copy(
-          port = 3000
+          port = 3000,
+          open = false
         )
       }
     }
