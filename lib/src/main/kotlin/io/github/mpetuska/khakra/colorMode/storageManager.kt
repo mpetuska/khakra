@@ -5,9 +5,20 @@ package io.github.mpetuska.khakra.colorMode
 public external val storageKey: String
 
 public external interface StorageManager {
-  public fun get(init: ColorMode?): ColorMode?
-  public fun set(value: ColorMode)
-  public var type: StorageManagerType
+  /**
+   * type: `"light" | "dark"`
+   */
+  public fun get(init: String?): String?
+
+  /**
+   * type: `"light" | "dark"`
+   */
+  public fun set(value: String)
+
+  /**
+   * type: `"cookie" | "localStorage"`
+   */
+  public var type: String
 }
 
 /**

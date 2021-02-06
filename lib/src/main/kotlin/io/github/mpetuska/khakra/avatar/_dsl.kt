@@ -8,25 +8,25 @@ import react.RElementBuilder
 import react.ReactElement
 
 @KhakraDSL
+public inline fun RBuilder.AvatarBadge(
+  noinline props: Builder<AvatarBadgeProps> = {},
+  crossinline block: Builder<RElementBuilder<AvatarBadgeProps>> = {},
+): ReactElement = KhakraComponent(AvatarBadge, props, block)
+
+@KhakraDSL
+public inline fun RBuilder.AvatarName(
+  noinline props: Builder<AvatarNameProps> = {},
+  crossinline block: Builder<RElementBuilder<AvatarNameProps>> = {},
+): ReactElement = KhakraComponent(AvatarName, props, block)
+
+@KhakraDSL
 public inline fun RBuilder.Avatar(
   noinline props: Builder<AvatarProps> = {},
   crossinline block: Builder<RElementBuilder<AvatarProps>> = {},
 ): ReactElement = KhakraComponent(Avatar, props, block)
 
 @KhakraDSL
-public inline fun RBuilder.AvatarTitle(
-  noinline props: Builder<AvatarTitleProps> = {},
-  crossinline block: Builder<RElementBuilder<AvatarTitleProps>> = {},
-): ReactElement = KhakraComponent(AvatarTitle, props, block)
-
-@KhakraDSL
-public inline fun RBuilder.AvatarDescription(
-  noinline props: Builder<AvatarDescriptionProps> = {},
-  crossinline block: Builder<RElementBuilder<AvatarDescriptionProps>> = {},
-): ReactElement = KhakraComponent(AvatarDescription, props, block)
-
-@KhakraDSL
-public inline fun RBuilder.AvatarIcon(
-  noinline props: Builder<AvatarIconProps> = {},
-  crossinline block: Builder<RElementBuilder<AvatarIconProps>> = {},
-): ReactElement = KhakraComponent(AvatarIcon, props, block)
+public inline fun RBuilder.AvatarGroup(
+  noinline props: Builder<AvatarGroupProps> = {},
+  crossinline block: Builder<RElementBuilder<AvatarGroupProps>> = {},
+): ReactElement = KhakraComponent(AvatarGroup, props, block)
