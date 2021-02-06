@@ -67,7 +67,7 @@ fun RBuilder.Example() {
 - [X] breadcrumb
 - [X] button
 - [X] checkbox
-- [ ] clickable
+- [X] clickable
 - [ ] close-button
 - [ ] color-mode
 - [ ] control-box
@@ -118,6 +118,12 @@ fun RBuilder.Example() {
 - [ ] utils
 - [ ] visually-hidden
 - [ ] visually-hidden
+
+## Getting Help
+If you get stuck or have some general feedback/suggestions, you have three options to proceed:
+1. Post your issue in **[GitHub Discussions](https://github.com/mpetuska/khakra/discussions)**
+2. Raise a **[GitHub Issue](https://github.com/mpetuska/khakra/issues)**
+3. Post a message in **[#khakra](https://kotlinlang.slack.com/messages/khakra)** Slack channel
 
 ## Developing
 
