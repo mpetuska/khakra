@@ -5,9 +5,7 @@ package io.github.mpetuska.khakra.layout
 import io.github.mpetuska.khakra.system.*
 import react.*
 
-
 public external interface BoxProps : HTMLChakraProps
-
 
 /**
  * Box is the most abstract component on top of which other chakra
@@ -24,7 +22,7 @@ public external interface SquareProps : BoxProps {
   public var size: dynamic
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * If `true`, the content will be centered in the square
    */

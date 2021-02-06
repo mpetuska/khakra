@@ -9,25 +9,29 @@ import react.*
 public external interface NativeImageOptions {
   /**
    * The native HTML `width` attribute to the passed to the `img`
+   *
+   * type: `string | number`
    */
-  public var htmlWidth: dynamic // string | number
+  public var htmlWidth: dynamic
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * The native HTML `height` attribute to the passed to the `img`
+   *
+   * type: `string | number`
    */
-  public var htmlHeight: dynamic // string | number
+  public var htmlHeight: dynamic
     get() = definedExternally
     set(value) = definedExternally
-  
+
   public var alt: String?
     get() = definedExternally
     set(value) = definedExternally
 }
 
 public external interface ImageProps : HTMLChakraProps, UseImageProps, NativeImageOptions {
-  
+
   /**
    * Fallback image `src` to show if image is loading or image fails.
    *
@@ -36,7 +40,7 @@ public external interface ImageProps : HTMLChakraProps, UseImageProps, NativeIma
   public var fallbackSrc: String?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * Fallback element to show if image is loading or image fails.
    * @type React.ReactElement
@@ -44,14 +48,16 @@ public external interface ImageProps : HTMLChakraProps, UseImageProps, NativeIma
   public var fallback: ReactElement?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * Defines loading strategy
+   *
+   * type: `"eager" | "lazy"`
    */
-  public var loading: String? // "eager" | "lazy"
+  public var loading: String?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * How the image to fit within its bounds.
    * It maps to css `object-fit` property.
@@ -60,7 +66,7 @@ public external interface ImageProps : HTMLChakraProps, UseImageProps, NativeIma
   public var fit: dynamic
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * How to align the image within its bounds.
    * It maps to css `object-position` property.
@@ -69,7 +75,7 @@ public external interface ImageProps : HTMLChakraProps, UseImageProps, NativeIma
   public var align: dynamic
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * If `true`, opt out of the `fallbackSrc` logic and use as `img`
    */

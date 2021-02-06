@@ -12,29 +12,30 @@ public external interface CreateIconOptions {
   public var viewBox: String?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * The `svg` path or group element
-   * @type React.ReactElement | React.ReactElement[]
+   *
+   * type: `React.ReactElement | React.ReactElement[]`
    */
-  public var path: dynamic // React.ReactElement | React.ReactElement[]
+  public var path: dynamic
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * If the has a single path, simply copy the path's `d` attribute
    */
   public var d: String?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * The display name useful in the dev tools
    */
   public var displayName: String?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * Default props automatically passed to the component; overwriteable
    */

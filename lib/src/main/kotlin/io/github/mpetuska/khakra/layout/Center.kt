@@ -5,9 +5,7 @@ package io.github.mpetuska.khakra.layout
 import io.github.mpetuska.khakra.system.*
 import react.*
 
-
 public external interface CenterProps : HTMLChakraProps
-
 
 /**
  * React component used to horizontally and vertically center its child.
@@ -18,11 +16,13 @@ public external interface CenterProps : HTMLChakraProps
 public external val Center: ChakraComponent<CenterProps>
 
 public external interface AbsoluteCenterProps : HTMLChakraProps {
-  public var axis: String? // "horizontal" | "vertical" | "both"
+  /**
+   * type: `"horizontal" | "vertical" | "both"`
+   */
+  public var axis: String?
     get() = definedExternally
     set(value) = definedExternally
 }
-
 
 /**
  * React component used to horizontally and vertically center an element
@@ -33,4 +33,4 @@ public external interface AbsoluteCenterProps : HTMLChakraProps {
  * @see Docs https://chakra-ui.com/docs/layout/center
  * @see WebDev https://web.dev/centering-in-css/#5.-pop-and-plop
  */
-public external val AbsoluteCenter: ComponentWithAs<SquareProps>
+public external val AbsoluteCenter: ComponentWithAs<AbsoluteCenterProps>

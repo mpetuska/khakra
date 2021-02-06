@@ -18,7 +18,6 @@ public external interface AspectRatioOptions {
 
 public external interface AspectRatioProps : HTMLChakraProps, AspectRatioOptions
 
-
 /**
  * React component used to cropping media (videos, images and maps)
  * to a desired aspect ratio.

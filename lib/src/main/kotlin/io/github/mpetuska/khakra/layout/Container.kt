@@ -2,8 +2,9 @@
 
 package io.github.mpetuska.khakra.layout
 
-import io.github.mpetuska.khakra.system.*
-import react.*
+import io.github.mpetuska.khakra.system.ComponentWithAs
+import io.github.mpetuska.khakra.system.HTMLChakraProps
+import io.github.mpetuska.khakra.system.ThemingProps
 
 public external interface ContainerProps : HTMLChakraProps, ThemingProps {
   /**
@@ -23,4 +24,4 @@ public external interface ContainerProps : HTMLChakraProps, ThemingProps {
  *
  * It also sets a default max-width of `60ch` (60 characters).
  */
-public external val Container: ComponentWithAs<SquareProps>
+public external val Container: ComponentWithAs<ContainerProps>

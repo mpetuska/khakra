@@ -9,6 +9,7 @@ public external interface FlexOptions {
 
   /**
    * Shorthand for `alignItems` style prop
+   *
    * @type SystemProps["alignItems"]
    */
   public var align: dynamic
@@ -17,6 +18,7 @@ public external interface FlexOptions {
 
   /**
    * Shorthand for `justifyContent` style prop
+   *
    * @type SystemProps["justifyContent"]
    */
   public var justify: dynamic
@@ -74,4 +76,4 @@ public external interface FlexProps : HTMLChakraProps, FlexOptions
  *
  * @see Docs https://chakra-ui.com/docs/layout/flex
  */
-public external val Flex: ComponentWithAs<SquareProps>
+public external val Flex: ComponentWithAs<FlexProps>

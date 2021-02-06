@@ -5,9 +5,7 @@ package io.github.mpetuska.khakra.layout
 import io.github.mpetuska.khakra.system.*
 import react.*
 
-
 public external interface BadgeProps : HTMLChakraProps, ThemingProps
-
 
 /**
  * React component used to cropping media (videos, images and maps)

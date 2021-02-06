@@ -11,28 +11,32 @@ public external interface UseAccordionProps : RProps {
   public var allowMultiple: Boolean?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * If `true`, any expanded accordion item can be collapsed again.
    */
   public var allowToggle: Boolean?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * The index(es) of the expanded accordion item
+   *
+   * type: `number | number[]`
    */
-  public var index: dynamic // number | number[]
+  public var index: dynamic
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * The initial index(es) of the expanded accordion item
+   *
+   * type: `number | number[]`
    */
-  public var defaultIndex: dynamic // number | number[]
+  public var defaultIndex: dynamic
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * The callback invoked when accordion items are expanded or collapsed.
    */
@@ -52,7 +56,10 @@ public external interface UseAccordionReturn : UseAccordionReturnBase {
 }
 
 public external interface UseAccordionReturnBase {
-  public var index: dynamic // number | number[]
+  /**
+   * type: `number | number[]`
+   */
+  public var index: dynamic
   public var setIndex: RDispatch<dynamic /* number | number[] */>
   public var getAccordionItemProps: (idx: Int?) -> GetAccordionItemProps
   public var focusedIndex: Int
@@ -79,14 +86,14 @@ public external interface UseAccordionItemProps : RProps {
   public var isDisabled: Boolean?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * If `true`, the accordion item will be focusable.
    */
   public var isFocusable: Boolean?
     get() = definedExternally
     set(value) = definedExternally
-  
+
   /**
    * A unique id for the accordion item.
    */
