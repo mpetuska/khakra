@@ -1,10 +1,10 @@
 package sandbox
 
-import io.github.mpetuska.khakra.react.*
-import kotlinx.browser.*
-import react.dom.*
-import sandbox.renders.*
-import sandbox.renders.layout.*
+import io.github.mpetuska.khakra.react.ChakraProvider
+import kotlinx.browser.document
+import react.dom.render
+import sandbox.previews.accordion.accordion
+import sandbox.previews.layout.layout
 
 @DslMarker
 annotation class KhakraPreview
@@ -12,8 +12,8 @@ annotation class KhakraPreview
 fun main() {
   render(document.getElementById("root")) {
     ChakraProvider {
+      accordion()
       layout()
-      AccordionPreview()
     }
   }
 }

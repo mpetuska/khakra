@@ -66,7 +66,7 @@ fun RBuilder.Example() {
 - [X] alert
 - [X] breadcrumb
 - [X] button
-- [ ] checkbox
+- [X] checkbox
 - [ ] clickable
 - [ ] close-button
 - [ ] color-mode

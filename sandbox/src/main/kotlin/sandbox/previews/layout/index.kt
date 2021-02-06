@@ -1,4 +1,4 @@
-package sandbox.renders.layout
+package sandbox.previews.layout
 
 import react.*
 import sandbox.*

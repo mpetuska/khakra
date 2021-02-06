@@ -1,4 +1,4 @@
-package sandbox.renders.layout
+package sandbox.previews.layout
 
 import io.github.mpetuska.khakra.layout.*
 import kotlinx.html.*
@@ -21,7 +21,7 @@ val AspectRatioPreview by Preview {
       }
     }
   }
-  
+
   SubPreview("Embed Maps") {
     AspectRatio({ ratio = 16 / 9 }) {
       iframe {

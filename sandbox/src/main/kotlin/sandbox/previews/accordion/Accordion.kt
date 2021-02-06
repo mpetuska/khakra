@@ -1,4 +1,4 @@
-package sandbox.renders
+package sandbox.previews.accordion
 
 import io.github.mpetuska.khakra.accordion.*
 import sandbox.util.*

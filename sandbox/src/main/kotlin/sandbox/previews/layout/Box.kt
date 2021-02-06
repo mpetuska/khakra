@@ -1,4 +1,4 @@
-package sandbox.renders.layout
+package sandbox.previews.layout
 
 import io.github.mpetuska.khakra.icons.*
 import io.github.mpetuska.khakra.image.*
@@ -11,7 +11,7 @@ val BoxPreview by Preview {
       +"I'm red"
     }
   }
-  
+
   SubPreview("Using 'as' prop") {
     Box({
       `as` = "button"
@@ -22,7 +22,7 @@ val BoxPreview by Preview {
       h = 8
     }) { +"Button" }
   }
-  
+
   SubPreview("AirBnb example") {
     Box({
       maxW = "sm"
