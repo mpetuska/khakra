@@ -62,6 +62,7 @@ fun RBuilder.Example() {
 ```
 
 ## Implementation Progress
+The bellow is a tracker list of chakra-ui modules that are being or have been ported.
 - [X] accordion
 - [X] alert
 - [X] breadcrumb
