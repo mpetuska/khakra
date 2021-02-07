@@ -106,7 +106,7 @@ fun RBuilder.Example() {
 - [X] switch
 - [ ] system
 - [ ] table
-- [ ] tabs
+- [X] tabs
 - [ ] tag
 - [ ] test-utils
 - [ ] textarea

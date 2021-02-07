@@ -3,9 +3,10 @@
 package io.github.mpetuska.khakra.clickable
 
 import org.w3c.dom.HTMLElement
+import react.RProps
 import react.RReadableRef
 
-public external interface UseClickableProps {
+public external interface UseClickableProps : RProps {
   /**
    * If `true`, the element will be disabled.
    * It will set the `disabled` HTML attribute
