@@ -1,4 +1,4 @@
-@file:JsModule("@chakra-ui/slider/dist/esm/create-slider")
+@file:JsModule("@chakra-ui/slider/dist/esm/use-slider")
 
 package io.github.mpetuska.khakra.slider
 
