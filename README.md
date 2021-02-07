@@ -100,7 +100,7 @@ fun RBuilder.Example() {
 - [ ] skeleton
 - [ ] skip-nav
 - [X] slider
-- [ ] spinner
+- [X] spinner
 - [ ] stat
 - [ ] styled-system
 - [ ] switch
