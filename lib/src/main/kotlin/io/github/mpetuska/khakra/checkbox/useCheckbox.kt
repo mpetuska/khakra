@@ -4,14 +4,7 @@ package io.github.mpetuska.khakra.checkbox
 
 import io.github.mpetuska.khakra.system.*
 
-public external interface UseCheckboxProps {
-  /**
-   * If `true`, the checkbox will be checked.
-   * You'll need to pass `onChange` to update its value (since it is now controlled)
-   */
-  public var isChecked: Boolean?
-    get() = definedExternally
-    set(value) = definedExternally
+public external interface UseCheckboxPropsBase {
 
   /**
    * If `true`, the checkbox will be indeterminate.
@@ -70,22 +63,6 @@ public external interface UseCheckboxProps {
     set(value) = definedExternally
 
   /**
-   * If `true`, the checkbox will be initially checked.
-   */
-  public var defaultChecked: Boolean?
-    get() = definedExternally
-    set(value) = definedExternally
-
-  /**
-   * The callback invoked when the checked state of the `Checkbox` changes..
-   *
-   * type: `ChangeEvent<HTMLInputElement>`
-   */
-  public var onChange: ((event: dynamic) -> Unit)?
-    get() = definedExternally
-    set(value) = definedExternally
-
-  /**
    * The name of the input field in a checkbox
    * (Useful for form submission).
    */
@@ -111,6 +88,32 @@ public external interface UseCheckboxProps {
     set(value) = definedExternally
 }
 
+public external interface UseCheckboxProps : UseCheckboxPropsBase {
+  /**
+   * If `true`, the checkbox will be checked.
+   * You'll need to pass `onChange` to update its value (since it is now controlled)
+   */
+  public var isChecked: Boolean?
+    get() = definedExternally
+    set(value) = definedExternally
+
+  /**
+   * If `true`, the checkbox will be initially checked.
+   */
+  public var defaultChecked: Boolean?
+    get() = definedExternally
+    set(value) = definedExternally
+
+  /**
+   * The callback invoked when the checked state of the `Checkbox` changes..
+   *
+   * type: `ChangeEvent<HTMLInputElement>`
+   */
+  public var onChange: ((event: dynamic) -> Unit)?
+    get() = definedExternally
+    set(value) = definedExternally
+}
+
 public external interface UseCheckboxReturnState {
   public val isInvalid: Boolean?
   public val isFocused: Boolean
@@ -125,9 +128,9 @@ public external interface UseCheckboxReturnState {
 
 public external interface UseCheckboxReturn {
   public val state: UseCheckboxReturnState
-  public fun getCheckboxProps(props: Any= definedExternally, forwardedRef: Any? = definedExternally): dynamic
-  public fun getInputProps(props: Any= definedExternally, forwardedRef: Any? = definedExternally): dynamic
-  public fun getLabelProps(props: Any= definedExternally, forwardedRef: Any? = definedExternally): dynamic
+  public fun getCheckboxProps(props: Any = definedExternally, forwardedRef: Any? = definedExternally): dynamic
+  public fun getInputProps(props: Any = definedExternally, forwardedRef: Any? = definedExternally): dynamic
+  public fun getLabelProps(props: Any = definedExternally, forwardedRef: Any? = definedExternally): dynamic
   public val htmlProps: dynamic
 }
 

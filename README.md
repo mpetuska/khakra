@@ -103,7 +103,7 @@ fun RBuilder.Example() {
 - [X] spinner
 - [ ] stat
 - [ ] styled-system
-- [ ] switch
+- [X] switch
 - [ ] system
 - [ ] table
 - [ ] tabs
