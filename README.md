@@ -99,7 +99,7 @@ fun RBuilder.Example() {
 - [ ] select
 - [ ] skeleton
 - [ ] skip-nav
-- [ ] slider
+- [X] slider
 - [ ] spinner
 - [ ] stat
 - [ ] styled-system
@@ -116,7 +116,6 @@ fun RBuilder.Example() {
 - [ ] tooltip
 - [ ] transition
 - [ ] utils
-- [ ] visually-hidden
 - [ ] visually-hidden
 
 ## Getting Help

@@ -125,9 +125,9 @@ public external interface UseCheckboxReturnState {
 
 public external interface UseCheckboxReturn {
   public val state: UseCheckboxReturnState
-  public fun getCheckboxProps(props: Any?, forwardedRef: Any? = definedExternally): dynamic
-  public fun getInputProps(props: Any?, forwardedRef: Any? = definedExternally): dynamic
-  public fun getLabelProps(props: Any?, forwardedRef: Any? = definedExternally): dynamic
+  public fun getCheckboxProps(props: Any= definedExternally, forwardedRef: Any? = definedExternally): dynamic
+  public fun getInputProps(props: Any= definedExternally, forwardedRef: Any? = definedExternally): dynamic
+  public fun getLabelProps(props: Any= definedExternally, forwardedRef: Any? = definedExternally): dynamic
   public val htmlProps: dynamic
 }
 
