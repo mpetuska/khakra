@@ -14,6 +14,27 @@ Kotlin React bindings for [ChakraUI](https://github.com/chakra-ui/chakra-ui/tree
 The API is for the most part identical to the JS version, so have a look at official docs for each component's usage
 samples.
 
+### Installation
+The library is not yet published to Maven Central, so you'll need to add a private repository.
+```kotlin
+// build.gradle.kts
+repositories {
+    maven("https://repo.kotlin.link")
+}
+```
+You'll also need to enable new IR JS compiler backend. You can do this by adding the following in your gradle.properties.
+```properties
+# gradle.properties
+kotlin.js.compiler=ir
+```
+Finally, add the dependency itself.
+```kotlin
+// build.gradle.kts
+dependencies {
+  implementation("io.github.mpetuska:khakra:$khakraVersion")
+}
+```
+
 ### DSL
 
 In addition to that, each component has a dedicated builder DSL taking two optional parameters - props builder lambda
