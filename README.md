@@ -19,7 +19,13 @@ The library is not yet published to Maven Central, so you'll need to add a priva
 ```kotlin
 // build.gradle.kts
 repositories {
-    maven("https://repo.kotlin.link")
+  maven("https://repo.kotlin.link")
+  maven("https://maven.pkg.github.com/mpetuska/khakra") {
+    credentials {
+      username = project.properties["gpr.username"]?.toString() ?: System.getenv("GH_PKG_USER")
+      password = project.properties["gpr.password"]?.toString() ?: System.getenv("GH_PKG_PASSWORD")
+    }
+  }
 }
 ```
 You'll also need to enable new IR JS compiler backend. You can do this by adding the following in your gradle.properties.
