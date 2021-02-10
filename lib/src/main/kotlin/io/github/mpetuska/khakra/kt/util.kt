@@ -8,6 +8,11 @@ import react.ReactElement
 
 public typealias Builder<T> = T.() -> Unit
 
+public typealias FC<PROPS> = RBuilder.(
+  props: Builder<PROPS>,
+  block: Builder<RElementBuilder<PROPS>>
+) -> ReactElement
+
 public inline fun <PROPS : RProps> RBuilder.KhakraComponent(
   rClass: RClass<PROPS>,
   noinline props: Builder<PROPS>,
