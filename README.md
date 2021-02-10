@@ -15,7 +15,9 @@ The API is for the most part identical to the JS version, so have a look at offi
 samples.
 
 ### Installation
+
 The library is not yet published to Maven Central, so you'll need to add a private repository.
+
 ```kotlin
 // build.gradle.kts
 repositories {
@@ -28,12 +30,17 @@ repositories {
   }
 }
 ```
-You'll also need to enable new IR JS compiler backend. You can do this by adding the following in your gradle.properties.
+
+You'll also need to enable new IR JS compiler backend. You can do this by adding the following in your
+gradle.properties.
+
 ```properties
 # gradle.properties
 kotlin.js.compiler=ir
 ```
+
 Finally, add the dependency itself.
+
 ```kotlin
 // build.gradle.kts
 dependencies {
@@ -81,7 +88,7 @@ any object.
 fun RBuilder.Example() {
   Image({
     src = "https://bit.ly/2Z4KKcF" // Known property
-    
+
     this["nonExistingProperty"] = 69 // <--------------------------------
     this["anotherNonExisting"] = this["nonExistingProperty"] // <--------
     val retrieved: Int = this["nonExistingProperty"] // Autocasted to Int
@@ -92,7 +99,9 @@ fun RBuilder.Example() {
 ```
 
 ## Implementation Progress
+
 The bellow is a tracker list of chakra-ui modules that are being or have been ported.
+
 - [X] accordion
 - [X] alert
 - [X] breadcrumb
@@ -113,7 +122,7 @@ The bellow is a tracker list of chakra-ui modules that are being or have been po
 - [x] icons
 - [X] image
 - [X] images
-- [ ] input
+- [X] input
 - [X] layout
 - [ ] live-region
 - [ ] media-query
@@ -150,7 +159,9 @@ The bellow is a tracker list of chakra-ui modules that are being or have been po
 - [ ] visually-hidden
 
 ## Getting Help
+
 If you get stuck or have some general feedback/suggestions, you have three options to proceed:
+
 1. Post your issue in **[GitHub Discussions](https://github.com/mpetuska/khakra/discussions)**
 2. Raise a **[GitHub Issue](https://github.com/mpetuska/khakra/issues)**
 3. Post a message in **[#khakra](https://kotlinlang.slack.com/messages/khakra)** Slack channel
