@@ -117,7 +117,7 @@ The bellow is a tracker list of chakra-ui modules that are being or have been po
 - [X] editable
 - [X] focus-lock
 - [X] form-control
-- [ ] hooks
+- [X] hooks
 - [X] icon
 - [x] icons
 - [X] image

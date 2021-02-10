@@ -89,6 +89,9 @@ public external interface SelectProps : SelectFieldProps, ThemingProps, SelectOp
   public var icon: dynamic
     get() = definedExternally
     set(value) = definedExternally
+  override var isDisabled: Boolean?
+    get() = definedExternally
+    set(value) = definedExternally
 }
 
 /**

@@ -13,4 +13,4 @@ buildscript {
 bootstrapRefreshVersions()
 
 rootProject.name = "khakra"
-include("lib", "sandbox")
+include("lib", "externals", "sandbox")
