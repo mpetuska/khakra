@@ -1,3 +1,5 @@
 package io.github.mpetuska.khakra
 
-public external interface SVGAttributes
+import react.RProps
+
+public external interface SVGAttributes : RProps

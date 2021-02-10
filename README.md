@@ -136,7 +136,7 @@ The bellow is a tracker list of chakra-ui modules that are being or have been po
 - [ ] progress
 - [ ] radio
 - [X] react
-- [ ] select
+- [X] select
 - [ ] skeleton
 - [ ] skip-nav
 - [X] slider
