@@ -147,7 +147,7 @@ The bellow is a tracker list of chakra-ui modules that are being or have been po
 - [ ] system
 - [ ] table
 - [X] tabs
-- [ ] tag
+- [X] tag
 - [ ] test-utils
 - [ ] textarea
 - [ ] theme
