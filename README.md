@@ -43,7 +43,7 @@ dependencies {
 
 ### DSL
 
-In addition to that, each component has a dedicated builder DSL taking two optional parameters - props builder lambda
+In addition to JS API, each component has a dedicated builder DSL taking two optional parameters - props builder lambda
 and child layout builder lambda. These DSLs are also marked with `@DslMarker` (named `@KhakraDSL`) so IntelliJ should
 colour them nicely for you. Sample usage:
 
@@ -105,7 +105,7 @@ The bellow is a tracker list of chakra-ui modules that are being or have been po
 - [X] counter
 - [X] css-reset
 - [X] descendant
-- [ ] editable
+- [X] editable
 - [ ] focus-lock
 - [ ] form-control
 - [ ] hooks
@@ -166,5 +166,5 @@ Run the sandbox to get components rendered:
 Publish to your local maven repository:
 
 ```bash
-./gradlew lib:publishToMavenLocal
+./gradlew lib:publishToMavenLocal -Pversion=0.0.0
 ```
