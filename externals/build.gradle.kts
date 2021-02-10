@@ -12,5 +12,5 @@ kotlin {
 
 val generateExternals = project.properties["generateExternals"]?.toString()?.toBoolean() ?: true
 dependencies {
-  api(npm("@chakra-ui/live-region", "1.0.3", generateExternals))
+  api(npm("@chakra-ui/react", "1.1.0", generateExternals))
 }
