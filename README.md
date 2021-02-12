@@ -127,7 +127,7 @@ The bellow is a tracker list of chakra-ui modules that are being or have been po
 - [X] live-region
 - [ ] media-query
 - [X] menu
-- [ ] modal
+- [X] modal
 - [ ] number-input
 - [ ] pin-input
 - [ ] popover

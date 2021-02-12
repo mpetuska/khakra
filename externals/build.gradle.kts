@@ -10,7 +10,9 @@ kotlin {
   }
 }
 
-val generateExternals = project.properties["generateExternals"]?.toString()?.toBoolean() ?: true
 dependencies {
-  api(npm("@chakra-ui/react", "1.1.0", generateExternals))
+  val npmModule = project.properties["externalModule"]?.toString()?.split(":")
+  if (npmModule != null && npmModule.size == 2) {
+    api(npm(npmModule[0], npmModule[1], true))
+  }
 }
