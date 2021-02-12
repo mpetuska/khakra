@@ -154,7 +154,7 @@ The bellow is a tracker list of chakra-ui modules that are being or have been po
 - [ ] theme-tools
 - [ ] toast
 - [ ] tooltip
-- [ ] transition
+- [X] transition
 - [ ] utils
 - [X] visually-hidden
 
