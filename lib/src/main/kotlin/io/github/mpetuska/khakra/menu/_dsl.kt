@@ -6,6 +6,7 @@ import io.github.mpetuska.khakra.kt.KhakraComponent
 import io.github.mpetuska.khakra.system.HTMLChakraProps
 import react.RBuilder
 import react.RElementBuilder
+import react.RProviderProps
 import react.ReactElement
 
 @KhakraDSL
@@ -67,3 +68,9 @@ public inline fun RBuilder.MenuDivider(
   noinline props: Builder<MenuDividerProps> = {},
   crossinline block: Builder<RElementBuilder<MenuDividerProps>> = {},
 ): ReactElement = KhakraComponent(MenuDivider, props, block)
+
+@KhakraDSL
+public inline fun RBuilder.MenuProvider(
+  noinline props: Builder<RProviderProps<UseMenuReturn>> = {},
+  crossinline block: Builder<RElementBuilder<RProviderProps<UseMenuReturn>>> = {},
+): ReactElement = KhakraComponent(MenuProvider, props, block)

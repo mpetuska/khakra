@@ -2,6 +2,9 @@
 
 package io.github.mpetuska.khakra.accordion
 
+import io.github.mpetuska.khakra.descendant.DescendantContext
+import org.w3c.dom.HTMLDivElement
+import org.w3c.dom.HTMLElement
 import react.*
 
 public external interface UseAccordionProps : RProps {
@@ -64,7 +67,7 @@ public external interface UseAccordionReturnBase {
   public var getAccordionItemProps: (idx: Int?) -> GetAccordionItemProps
   public var focusedIndex: Int
   public var setFocusedIndex: RDispatch<Int>
-  public var domContext: Any
+  public var domContext: DescendantContext<HTMLElement>
 }
 
 public external interface GetAccordionItemProps : RProps {

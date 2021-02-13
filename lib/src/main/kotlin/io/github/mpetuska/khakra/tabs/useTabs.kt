@@ -4,7 +4,10 @@ package io.github.mpetuska.khakra.tabs
 
 import io.github.mpetuska.khakra.clickable.UseClickableProps
 import io.github.mpetuska.khakra.clickable.UseClickableReturn
+import io.github.mpetuska.khakra.descendant.DescendantContext
 import kotlinext.js.Record
+import org.w3c.dom.HTMLDivElement
+import org.w3c.dom.HTMLElement
 import react.RDispatch
 import react.RProps
 import react.RProvider
@@ -98,7 +101,7 @@ public external interface UseTabsContext {
    */
   public val orientation: String
   public val enabledDomContext: dynamic
-  public val domContext: dynamic
+  public val domContext: DescendantContext<HTMLElement>
 }
 
 public external interface UseTabsReturn : UseTabsContext {

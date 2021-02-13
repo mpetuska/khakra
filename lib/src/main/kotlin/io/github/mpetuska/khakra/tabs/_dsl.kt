@@ -6,6 +6,7 @@ import io.github.mpetuska.khakra.kt.KhakraComponent
 import io.github.mpetuska.khakra.kt.get
 import react.RBuilder
 import react.RElementBuilder
+import react.RProviderProps
 import react.ReactElement
 
 /**
@@ -55,3 +56,9 @@ public inline fun RBuilder.TabIndicator(
   noinline props: Builder<TabIndicatorProps> = {},
   crossinline block: Builder<RElementBuilder<TabIndicatorProps>> = {},
 ): ReactElement = KhakraComponent(TabIndicator, props, block)
+
+@KhakraDSL
+public inline fun RBuilder.TabsProvider(
+  noinline props: Builder<RProviderProps<UseTabsContext>> = {},
+  crossinline block: Builder<RElementBuilder<RProviderProps<UseTabsContext>>> = {},
+): ReactElement = KhakraComponent(TabsProvider, props, block)

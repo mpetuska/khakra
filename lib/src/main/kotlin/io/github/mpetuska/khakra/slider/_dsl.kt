@@ -7,6 +7,7 @@ import io.github.mpetuska.khakra.kt.get
 import io.github.mpetuska.khakra.kt.set
 import react.RBuilder
 import react.RElementBuilder
+import react.RProviderProps
 import react.ReactElement
 
 /**
@@ -67,3 +68,9 @@ public inline fun RBuilder.SliderMark(
   noinline props: Builder<SliderMarkProps> = {},
   crossinline block: Builder<RElementBuilder<SliderMarkProps>> = {},
 ): ReactElement = KhakraComponent(SliderMark, props, block)
+
+@KhakraDSL
+public inline fun RBuilder.SliderProvider(
+  noinline props: Builder<RProviderProps<SliderContext>> = {},
+  crossinline block: Builder<RElementBuilder<RProviderProps<SliderContext>>> = {},
+): ReactElement = KhakraComponent(SliderProvider, props, block)

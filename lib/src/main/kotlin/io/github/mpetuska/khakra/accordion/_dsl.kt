@@ -1,10 +1,13 @@
 package io.github.mpetuska.khakra.accordion
 
-import io.github.mpetuska.khakra.icon.*
+import io.github.mpetuska.khakra.KhakraDSL
+import io.github.mpetuska.khakra.icon.IconProps
 import io.github.mpetuska.khakra.kt.Builder
 import io.github.mpetuska.khakra.kt.KhakraComponent
-import io.github.mpetuska.khakra.KhakraDSL
-import react.*
+import react.RBuilder
+import react.RElementBuilder
+import react.RProviderProps
+import react.ReactElement
 
 @KhakraDSL
 public inline fun RBuilder.Accordion(
@@ -35,3 +38,9 @@ public inline fun RBuilder.AccordionIcon(
   noinline props: Builder<IconProps> = {},
   crossinline block: Builder<RElementBuilder<IconProps>> = {},
 ): ReactElement = KhakraComponent(AccordionIcon, props, block)
+
+@KhakraDSL
+public inline fun RBuilder.AccordionProvider(
+  noinline props: Builder<RProviderProps<AccordionContext>> = {},
+  crossinline block: Builder<RElementBuilder<RProviderProps<AccordionContext>>> = {},
+): ReactElement = KhakraComponent(AccordionProvider, props, block)

@@ -6,6 +6,7 @@ import io.github.mpetuska.khakra.kt.Builder
 import io.github.mpetuska.khakra.kt.KhakraComponent
 import react.RBuilder
 import react.RElementBuilder
+import react.RProviderProps
 import react.ReactElement
 
 @KhakraDSL
@@ -34,8 +35,8 @@ public inline fun RBuilder.DrawerContent(
 
 @KhakraDSL
 public inline fun RBuilder.ModalContextProvider(
-  noinline props: Builder<ModalContext> = {},
-  crossinline block: Builder<RElementBuilder<ModalContext>> = {},
+  noinline props: Builder<RProviderProps<ModalContext>> = {},
+  crossinline block: Builder<RElementBuilder<RProviderProps<ModalContext>>> = {},
 ): ReactElement = KhakraComponent(ModalContextProvider, props, block)
 
 @KhakraDSL
