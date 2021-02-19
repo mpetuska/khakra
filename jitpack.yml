@@ -1,0 +1,4 @@
+jdk:
+  - openjdk15
+install:
+  - ./gradlew lib:publishToMavenLocal -Pversion=$VERSION -Pgroup=$GROUP

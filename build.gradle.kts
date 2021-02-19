@@ -3,7 +3,8 @@ plugins {
 }
 
 allprojects {
-  group = "io.github.mpetuska"
+  version = properties["version"] ?: "0.0.0"
+  group = properties["group"] ?: "com.github.mpetuska"
   repositories {
     mavenCentral()
     mavenLocal()

@@ -47,7 +47,7 @@ Finally, add the dependency itself.
 ```kotlin
 // build.gradle.kts
 dependencies {
-  implementation("io.github.mpetuska:khakra:$khakraVersion")
+  implementation("com.github.mpetuska:khakra:$khakraVersion")
 }
 ```
 
