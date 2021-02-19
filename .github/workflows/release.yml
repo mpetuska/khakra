@@ -55,7 +55,7 @@ jobs:
         with:
           java-version: 11
       - name: Publish to GitHub Packages
-        run: ./gradlew publish -Ppublish.GitHub=true -Pversion=${VERSION//v}
+        run: ./gradlew publish -Ppublish.GitHub=true -Pversion=${VERSION//v} -Pgroup=com.github.mpetuska
         env:
           VERSION: ${{ github.event.release.tag_name }}
           GH_USERNAME: ${{ github.actor }}
