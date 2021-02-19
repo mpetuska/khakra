@@ -1,5 +1,5 @@
 jdk:
-  - openjdk15
+  - openjdk11
 install:
   - echo $JAVA_HOME
   - ./gradlew lib:publishToMavenLocal -Pversion=$VERSION -Pgroup=$GROUP

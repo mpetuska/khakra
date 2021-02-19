@@ -30,7 +30,7 @@ fun Project.checkNoneStarting(vararg props: String) = props.none {
 }
 
 object Git {
-  val headCommitHash = run {
+  val headCommitHash by lazy {
     val child = Runtime.getRuntime().exec("git rev-parse --verify HEAD")
     child.waitFor()
     child.inputStream.readAllBytes().toString(Charset.defaultCharset()).trim()
