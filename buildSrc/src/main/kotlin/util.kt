@@ -1,7 +1,5 @@
 import groovy.lang.*
 import org.gradle.api.Project
-import org.gradle.api.artifacts.dsl.RepositoryHandler
-import org.gradle.api.artifacts.repositories.MavenArtifactRepository
 import org.gradle.api.provider.*
 import java.io.*
 import java.nio.charset.*
@@ -32,7 +30,7 @@ fun Project.checkNoneStarting(vararg props: String) = props.none {
 }
 
 object Git {
-  val headCommitHash by lazy {
+  val headCommitHash = run {
     val child = Runtime.getRuntime().exec("git rev-parse --verify HEAD")
     child.waitFor()
     child.inputStream.readAllBytes().toString(Charset.defaultCharset()).trim()
