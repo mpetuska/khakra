@@ -1,7 +1,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/gitpod-ready_to_code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/mpetuska/khakra)
 [![Slack chat](https://img.shields.io/badge/kotlinlang-%23khakra-B37700?logo=slack&style=flat-square)](https://kotlinlang.slack.com/messages/khakra)
 [![Version maven-central](https://img.shields.io/maven-central/v/io.github.mpetuska/khakra?logo=apache-maven&style=flat-square)](https://mvnrepository.com/artifact/io.github.mpetuska/khakra)
-[![Version jitpack](https://jitpack.io/v/mpetuska/khakra.svg)](https://jitpack.io/#mpetuska/khakra)
+[![Version jitpack](https://jitpack.io/v/mpetuska/khakra.svg?style=flat-square&logo=jitpack)](https://jitpack.io/#mpetuska/khakra)
 [![Version kotlin](https://img.shields.io/badge/kotlin-1.4.30-orange?logo=kotlin&style=flat-square)](https://github.com/JetBrains/kotlin/releases/tag/v1.4.30)
 [![Version react](https://img.shields.io/badge/react-17.0.1-orange?logo=react&style=flat-square)](https://bintray.com/kotlin/kotlin-js-wrappers/kotlin-react/17.0.1-pre.144-kotlin-1.4.30)
 [![Version chakra](https://img.shields.io/badge/chakra--ui-1.3.2-orange?logo=chakra-ui&style=flat-square)](https://github.com/chakra-ui/chakra-ui/tree/%40chakra-ui/react%401.3.2)
