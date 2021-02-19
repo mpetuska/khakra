@@ -1,6 +1,5 @@
 jdk:
   - openjdk15
 install:
-  - export PATH=$JAVA_HOME/bin:$PATH
-  - java --version
+  - echo $JAVA_HOME
   - ./gradlew lib:publishToMavenLocal -Pversion=$VERSION -Pgroup=$GROUP
